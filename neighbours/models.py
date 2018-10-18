@@ -16,6 +16,9 @@ class Neighbourhood(models.Model):
     name = models.CharField(max_length=2000)
     location = models.CharField(max_length=2000)
 
+    def __str__(self):
+        return self.name
+
     def create_neighbourhood(self):
         """
         method to save project images
@@ -29,8 +32,18 @@ class Neighbourhood(models.Model):
         method to get image by id
         :return:
         """
-        projects = cls.objects.filter(id=neighbourhood_id)
-        return projects
+        neighbourhood = cls.objects.filter(id=neighbourhood_id)
+        return neighbourhood
+
+    @classmethod
+    def update_neighbourhood(cls):
+        """
+        method to update neighbourhood details
+        :return:
+        """
+        info = cls.objects.all().update()
+        info.save()
+        return info
 
     def delete_neighbourhood(self):
         """
@@ -50,7 +63,7 @@ class User(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='user')
     email = models.CharField(max_length=2000)
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="user")
-    neighbourhood = models.ForeignKey(Neighbourhood, on_delete=models.CASCADE, related_name='design', null=True)
+    neighbourhood = models.ForeignKey(Neighbourhood, on_delete=models.CASCADE, related_name='user', null=True)
 
     # sender is source of signal
     @receiver(post_save, sender=User)
@@ -75,3 +88,47 @@ class Business(models.Model):
     """
     class for creating businesses
     """
+    name = models.CharField(max_length=2000)
+    email = models.CharField(max_length=2000)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
+    neighbourhood = models.ForeignKey(Neighbourhood, on_delete=models.CASCADE, related_name='business', null=True)
+
+    def __str__(self):
+        return self.name
+
+    def create_business(self):
+        self.save()
+
+    def delete_business(self):
+        self.delete()
+
+    @classmethod
+    def find_business(cls, business_id):
+        """
+        method to find business by id
+        :param business_id:
+        :return:
+        """
+        business = cls.objects.filter(id=business_id)
+        return business
+
+    @classmethod
+    def update_business(cls):
+        """
+        method to update business details
+        :return:
+        """
+        biz = cls.objects.all().update()
+        biz.save()
+        return biz
+
+    @classmethod
+    def search_business(cls, search_term):
+        """
+        method to search for business by neighbourhood
+        :return:
+        """
+        business = cls.objects.filter(name__neighbourhood__icontains=search_term)
+        return business
+
+
