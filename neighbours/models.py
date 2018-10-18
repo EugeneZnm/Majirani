@@ -15,6 +15,7 @@ class Neighbourhood(models.Model):
     """
     name = models.CharField(max_length=2000)
     location = models.CharField(max_length=2000)
+    user = models.OneToOneField(User)
 
     def __str__(self):
         return self.name
@@ -53,17 +54,18 @@ class Neighbourhood(models.Model):
         self.delete()
 
 
-class User(models.Model):
+class Profile(models.Model):
     """
     class for user profile
     """
     avatar = models.ImageField(upload_to='media/', null=True)
     name = models.CharField(max_length=2000)
-    id = models.IntegerField()
-    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='user')
     email = models.CharField(max_length=2000)
-    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="user")
-    neighbourhood = models.ForeignKey(Neighbourhood, on_delete=models.CASCADE, related_name='user', null=True)
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="profile")
+    neighbourhood = models.ForeignKey(Neighbourhood, on_delete=models.CASCADE, related_name='profile', null=True)
+
+    def __str__(self):
+        return self.user.username
 
     # sender is source of signal
     @receiver(post_save, sender=User)
@@ -73,7 +75,7 @@ class User(models.Model):
         :return:
         """
         if created:
-            User.objects.create(user=instance)
+            Profile.objects.create(user=instance)
 
     @receiver(post_save, sender=User)
     def save_user_profile(sender, instance, **kwargs):
@@ -81,7 +83,7 @@ class User(models.Model):
         method to save profile
         :return:
         """
-        instance.user.save()
+        instance.profile.save()
 
 
 class Business(models.Model):
