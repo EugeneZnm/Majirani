@@ -143,4 +143,9 @@ LOGIN_REDIRECT_URL = 'profile'
 # defining the login url of application
 LOGIN_URL = 'login'
 
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'x41808715@gmail.com'
+EMAIL_HOST_PASSWORD = '1123816344'
+EMAIL_PORT = 587
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

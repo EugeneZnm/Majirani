@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99e10c2d-09cf-4efe-8a7c-e23265d43f8f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/neighbours/templates/Profile/edit_profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neighbours/templates/Profile/profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neighbours/templates/registration/password_change.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neighbours/templates/registration/password_change_done.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neighbours/templates/registration/password_reset.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neighbours/templates/registration/password_reset_complete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neighbours/templates/registration/password_reset_confirm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neighbours/templates/registration/password_reset_done.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neighbours/templates/registration/password_reset_email.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neighbours/templates/registration/password_subject_reset.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neighbours/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neighbour/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/neighbour/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neighbours/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/neighbours/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neighbour/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/neighbour/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,56 +23,42 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="30" />
+          <entry key="html" value="31" />
           <entry key="md" value="1" />
-          <entry key="py" value="11" />
+          <entry key="py" value="12" />
           <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="30" />
+          <entry key="HTML" value="31" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="11" />
+          <entry key="Python" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="100" />
+          <entry key="html" value="106" />
           <entry key="md" value="26" />
-          <entry key="py" value="1785" />
+          <entry key="py" value="1805" />
+          <entry key="txt" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="100" />
+          <entry key="HTML" value="106" />
           <entry key="Markdown" value="26" />
-          <entry key="Python" value="1785" />
+          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="Python" value="1805" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.69015354">
+    <splitter split-orientation="horizontal" split-proportion="0.3755943">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/neighbours/models.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1465">
-                  <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-                  <folding>
-                    <element signature="e#0#28#0" expanded="true" />
-                    <marker date="1539865253179" expanded="true" signature="951:1127" ph="..." />
-                    <marker date="1539865253179" expanded="true" signature="1283:1433" ph="..." />
-                    <marker date="1539865253179" expanded="true" signature="2246:2251" ph="..." />
-                    <marker date="1539865253179" expanded="true" signature="2712:2716" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/neighbour/urls.py">
               <provider selected="true" editor-type-id="text-editor">
@@ -139,27 +113,37 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/neighbours/templates/registration/password_change.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="285">
+                  <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/neighbours/templates/registration/password_reset_email.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+                <state relative-caret-position="90">
+                  <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/neighbours/templates/registration/password_subject_reset.txt">
-              <provider selected="true" editor-type-id="text-editor" />
+            <entry file="file://$PROJECT_DIR$/neighbour/settings.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="458">
+                  <caret line="148" column="33" selection-start-line="148" selection-start-column="33" selection-end-line="148" selection-end-column="33" />
+                </state>
+              </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/neighbours/forms.py">
+            <entry file="file://$PROJECT_DIR$/neighbours/templates/registration/password_subject_reset.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="276">
-                  <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
-                  <folding>
-                    <element signature="e#0#24#0" expanded="true" />
-                  </folding>
+                <state>
+                  <caret column="7" selection-start-column="7" selection-end-column="7" />
                 </state>
               </provider>
             </entry>
@@ -168,7 +152,7 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/neighbours/models.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="120">
@@ -184,10 +168,10 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/neighbours/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
+                <state relative-caret-position="163">
                   <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
                   <folding>
                     <element signature="e#0#32#0" expanded="true" />
@@ -256,7 +240,6 @@
         <option value="$PROJECT_DIR$/neighbours/templates/registration/navbar.html" />
         <option value="$PROJECT_DIR$/neighbours/templates/base.html" />
         <option value="$PROJECT_DIR$/neighbours/templates/home.html" />
-        <option value="$PROJECT_DIR$/neighbour/settings.py" />
         <option value="$PROJECT_DIR$/neighbours/forms.py" />
         <option value="$PROJECT_DIR$/neighbours/templates/Profile/profile.html" />
         <option value="$PROJECT_DIR$/neighbours/templates/Profile/edit_profile.html" />
@@ -269,16 +252,18 @@
         <option value="$PROJECT_DIR$/neighbours/templates/registration/password_reset_complete.html" />
         <option value="$PROJECT_DIR$/neighbours/templates/registration/password_reset_confirm.html" />
         <option value="$PROJECT_DIR$/neighbours/templates/registration/password_reset.html" />
-        <option value="$PROJECT_DIR$/neighbours/templates/registration/password_reset_email.html" />
         <option value="$PROJECT_DIR$/neighbours/templates/registration/password_reset_done.html" />
+        <option value="$PROJECT_DIR$/neighbours/templates/registration/password_subject_reset.txt" />
+        <option value="$PROJECT_DIR$/neighbours/templates/registration/password_reset_email.html" />
+        <option value="$PROJECT_DIR$/neighbour/settings.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1366" />
-    <option name="y" value="-4" />
-    <option name="width" value="1366" />
-    <option name="height" value="772" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="240" />
+    <option name="y" value="93" />
+    <option name="width" value="874" />
+    <option name="height" value="522" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -308,13 +293,6 @@
               <item name="NWATCH" type="462c0819:PsiDirectoryNode" />
               <item name="neighbours" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NWATCH" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NWATCH" type="462c0819:PsiDirectoryNode" />
-              <item name="neighbours" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="registration" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -361,10 +339,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1366" y="-4" width="1366" height="772" extended-state="6" />
+    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4930362" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4930362" visible="true" weight="0.14848486" />
       <window_info id="Structure" order="1" sideWeight="0.5069638" side_tool="true" weight="0.3251366" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.34937888" />
@@ -376,7 +354,7 @@
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32919255" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" weight="0.3275862" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4969697" visible="true" weight="0.32919255" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4969697" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5030303" side_tool="true" weight="0.32919255" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.32919255" />
@@ -639,13 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neighbour/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-280">
-          <caret line="86" column="1" lean-forward="true" selection-start-line="86" selection-start-column="1" selection-end-line="86" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/neighbours/templates/Profile/profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -670,23 +641,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neighbours/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1465">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <marker date="1539865253179" expanded="true" signature="951:1127" ph="..." />
-            <marker date="1539865253179" expanded="true" signature="1283:1433" ph="..." />
-            <marker date="1539865253179" expanded="true" signature="2246:2251" ph="..." />
-            <marker date="1539865253179" expanded="true" signature="2712:2716" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/neighbours/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="163">
           <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
@@ -704,13 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neighbours/templates/registration/password_change.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/neighbour/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -721,17 +671,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neighbours/templates/registration/password_change_done.html">
+    <entry file="file://$PROJECT_DIR$/neighbours/templates/registration/password_subject_reset.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neighbours/templates/registration/password_reset.html">
+    <entry file="file://$PROJECT_DIR$/neighbours/templates/registration/password_reset_done.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        <state relative-caret-position="255">
+          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -745,22 +695,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neighbours/templates/registration/password_reset_done.html">
+    <entry file="file://$PROJECT_DIR$/neighbours/templates/registration/password_reset.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        <state relative-caret-position="315">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neighbours/templates/registration/password_change_done.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neighbours/templates/registration/password_change.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/neighbours/templates/registration/password_reset_email.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="90">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neighbours/templates/registration/password_subject_reset.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/neighbour/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="148" column="33" selection-start-line="148" selection-start-column="33" selection-end-line="148" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neighbours/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="17" column="91" selection-start-line="17" selection-start-column="91" selection-end-line="17" selection-end-column="91" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <marker date="1539865253179" expanded="true" signature="951:1127" ph="..." />
+            <marker date="1539865253179" expanded="true" signature="1283:1433" ph="..." />
+            <marker date="1539865253179" expanded="true" signature="2246:2251" ph="..." />
+            <marker date="1539865253179" expanded="true" signature="2712:2716" ph="..." />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
