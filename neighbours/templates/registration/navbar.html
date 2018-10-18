@@ -1,0 +1,52 @@
+{% block body %}
+
+<nav class="navbar navbar-expand-lg bg-info">
+    <div class="container">
+        <div class="navbar-translate">
+            <a class="navbar-brand" href="{%url 'home'%}"><strong>TUZWA</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse">
+            <form class="form-inline ml-auto" role="search" action="{% url 'search_results' %}" >
+                <div class="form-group no-border">
+                  <input type="search" name="project" class="form-control" placeholder="Search Project">
+                </div>
+                <button type="submit" class="btn btn-white btn-just-icon btn-round">
+                    <i class="material-icons">search</i>
+                </button>
+            </form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <ul class="navbar-nav">
+                {% if user.is_authenticated %}
+               <li class="nav-item active">
+                <a class="nav-link" href="{% url 'profile' %}"><strong>{{ user.username }}</strong></a>
+              </li>&nbsp;
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'edit_profile' %}"><strong>Edit Profile</strong></a>
+              </li>&nbsp;&nbsp;
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'new_project' %}"><strong>SUBMIT SITE</strong></a>
+              </li>&nbsp;&nbsp;
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'logout' %}"><strong>Logout</strong></a>
+              </li>
+                 {% else %}&nbsp;
+              <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'signup' %}"><strong>Signup</strong></a>
+              </li>&nbsp;
+              <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'login' %}"><strong>Login</strong></a>
+              </li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</nav>
+
+{% endblock body %}

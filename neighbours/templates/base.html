@@ -1,10 +1,29 @@
-<!DOCTYPE html>
+{% load bootstrap4 %}
+{% load staticfiles %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+
+    <!-- if esle statement checking if we get title value from view function that will render template-->
+    {% if title %}
+    <title> JIRANI {{title}}</title>
+    {% else %}
+    <title> JIRANI </title>
+    {% endif %}
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-kit/1.1.0/css/material-kit.css">
+    {% block styles %}
+    {% bootstrap_css %}
+    {% endblock %}
+
 </head>
 <body>
-
+    {% include "navbar.html" %}
+    {% block content %} {% endblock %}
+    {% block scripts %}
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    {% bootstrap_javascript %}
+    {% endblock %}
 </body>
 </html>
