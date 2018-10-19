@@ -1,8 +1,11 @@
-{% extends 'base.html' %}
+{% extends 'registration/base.html' %}
 {% load bootstrap4 %}
 {% load crispy_forms_tags %}
-{ % block content %}
+{% block content %}
 <style>
+body {
+         background-image: url("/static/my-neighbourhood-2-638.jpg");
+        }
 
 </style>
 
@@ -14,11 +17,10 @@
                 <div class="col-lg-8 col-md-10 col-sm-12">
                   <div class="card">
                     <div class="card-body">
-                      <form method="post" action="{% url 'edit_profile'%}" enctype="multipart/form-data" novalidate>
+                      <form method="post" action="{% url 'newhood'%}" enctype="multipart/form-data" novalidate>
                         {% csrf_token %}
-                        {% include 'Includes/form.html' %}
-                        <!--{{ form.as_p}}-->
-                        <button type="submit" class="btn btn-success btn-block" style="margin-left: 0em;">Update Profile</button>
+                        {{nform|crispy}}
+                        <button type="submit" class="btn btn-success btn-block" style="margin-left: 0em;">New Neighbourhood</button>
                       </form>
                     </div>
                   </div>
@@ -26,4 +28,4 @@
             </div>
        </div>
 </body>
-{ % endblock %}
+{% endblock %}

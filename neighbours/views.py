@@ -1,14 +1,14 @@
 
 from django.shortcuts import render, redirect
 
-from django.core.mail import EmailMessage
-from .tokens import account_activation_token
-from django.utils.encoding import force_bytes, force_text
-from django.http import HttpResponse
-from django.template.loader import render_to_string
-from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
-from django.contrib.sites.shortcuts import get_current_site
-from django.contrib.auth import login, authenticate
+# from django.core.mail import EmailMessage
+# from .tokens import account_activation_token
+# from django.utils.encoding import force_bytes, force_text
+# from django.http import HttpResponse
+# from django.template.loader import render_to_string
+# from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
+# from django.contrib.sites.shortcuts import get_current_site
+# from django.contrib.auth import login, authenticate
 # importing login as auth_login to prevent clashing with inbuilt view
 from django.contrib.auth import login as auth_login
 
@@ -147,9 +147,9 @@ def create_hood(request):
             request.user.profile.save()
             n.save
             return redirect('neighbourhood')
-        else:
-            nform = NeighbourhoodForm()
-        return render(request, 'createhood.html', locals())
+    else:
+        nform = NeighbourhoodForm()
+    return render(request, 'createhood.html', {'nform': nform})
 
 
 @login_required(login_url='/registration/login/')

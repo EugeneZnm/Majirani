@@ -10,7 +10,7 @@
 	<div class="card" style="width:500px;;position-relative; left:30%;">
 		<div class="row">
 			<div class="col-md-6">
-				<img style="width: 250px;"class="card-img-top" src="{{ profile.avatar.url }}" />
+				<img style="width: 250px;"class="card-img-top" src="{{ profile.avatar.url }}"/>
 			</div>
 			<div class="col-md-6" style="background-color:#50612A;">
 				<div class="card-body"  >
@@ -18,6 +18,7 @@
 					<h6 class="card-subtitle">{{user.email}}</h6><br>
 					<h6 class="card-subtitle">{{profile.neighbourhood}}</h6><br>
 					<p class="card-subtitle">{{profile.bio}}</p>
+                  <button><a class="nav-link" href="{% url 'newhood' %}"><strong>Create Neighbourhood</strong></a></button>&nbsp;&nbsp;
 				</div>
 			</div>
 		</div>

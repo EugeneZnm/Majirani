@@ -1,5 +1,7 @@
 from django import forms
 
+from django.forms import ModelForm
+
 from django.contrib.auth.forms import UserCreationForm
 
 from .models import Profile, Neighbourhood, Business, Comment, Post
@@ -36,5 +38,18 @@ class NeighbourhoodForm(forms.ModelForm):
     """
     class Meta:
         model = Neighbourhood
-        exclude =['admin', 'biz']
-        fields =['image', 'name', 'location', 'police', 'Hospital']
+        exclude = ['admin', 'biz']
+        fields = ['image', 'name', 'location', 'police', 'Hospital']
+
+
+# class NeighbourhoodForm(forms.ModelForm):
+#     def __init__(self, *args, **kwargs):
+#         super().__init__(*args, **kwargs)
+#         self.fields['image'].widget = forms.ImageField()
+#         self.fields['location'].widget = forms.CharField()
+#         self.fields['police'].widget = forms.IntegerField()
+#         self.fields['health'].widget = forms.IntegerField()
+#
+#     class Meta:
+#         model = Neighbourhood
+#         exclude = ('admin','biz')

@@ -19,7 +19,7 @@ class Neighbourhood(models.Model):
     police = models.IntegerField(null=True)
     Hospital = models.IntegerField(null=True)
     admin = models.ForeignKey('Profile', related_name='Neighbourhood', null=True)
-    biz = models.ForeignKey('Business', related_name='Business', null=True)
+    # biz = models.ForeignKey('Business', related_name='Business', null=True)
 
     def __str__(self):
         return self.name
