@@ -150,3 +150,13 @@ def create_hood(request):
         else:
             nform = NeighbourhoodForm()
         return render(request, 'createhood.html', locals())
+
+
+@login_required(login_url='/registration/login/')
+def neighbourhood(request, neighbourhood_id):
+    """
+    view function to render neighbourhood
+
+    """
+    hoods = Neighbourhood.objects.find_neighbourhood(neighbourhood_id)
+    return render(request, 'neighbourhood.html', locals())
