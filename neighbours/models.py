@@ -73,6 +73,7 @@ class Profile(models.Model):
     """
     avatar = models.ImageField(upload_to='media/', null=True)
     name = models.CharField(max_length=2000)
+    bio = models.CharField(max_length=2000, null=True)
     email = models.CharField(max_length=2000)
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="profile")
     neighbourhood = models.ForeignKey(Neighbourhood, on_delete=models.CASCADE, related_name='profile', null=True)

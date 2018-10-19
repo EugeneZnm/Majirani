@@ -27,4 +27,4 @@ class EditProfileForm(forms.ModelForm):
     """
     class Meta:
         model = Profile
-        fields = ['avatar', 'name', 'neighbourhood']
+        fields = ['avatar', 'name', 'bio', 'email']
