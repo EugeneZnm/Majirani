@@ -13,7 +13,7 @@
         </div>
 
         <div class="collapse navbar-collapse">
-            <form class="form-inline ml-auto" role="search" action="{% url 'search_results' %}" >
+            <form class="form-inline ml-auto" role="search" action="{% url 'search_biz' %}" >
                 <div class="form-group no-border">
                   <input type="search" name="project" class="form-control" placeholder="Search Project">
                 </div>
@@ -29,9 +29,6 @@
               </li>&nbsp;
                 <li class="nav-item active">
                   <a class="nav-link" href="{% url 'edit_profile' %}"><strong>Edit Profile</strong></a>
-              </li>&nbsp;&nbsp;
-                <li class="nav-item active">
-                  <a class="nav-link" href="{% url 'new_project' %}"><strong>SUBMIT SITE</strong></a>
               </li>&nbsp;&nbsp;
                 <li class="nav-item active">
                   <a class="nav-link" href="{% url 'logout' %}"><strong>Logout</strong></a>

@@ -12,6 +12,8 @@ url(r'^profile_edit/', views.profile_edit,name='edit_profile'),
 
 url(r'^profile/', views.profile, name='profile'),
 
+url(r'^search/', views.search_biz, name='search_biz'),
+
 ]
 
 if settings.DEBUG:

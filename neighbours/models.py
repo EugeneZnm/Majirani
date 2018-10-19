@@ -15,9 +15,11 @@ class Neighbourhood(models.Model):
     """
     name = models.CharField(max_length=2000)
     location = models.CharField(max_length=2000)
-    police =models.IntegerField(null=True)
+    image = models.ImageField(upload_to='media/', null=True)
+    police = models.IntegerField(null=True)
     Hospital = models.IntegerField(null=True)
-    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='Neighbourhood', null=True)
+    admin = models.ForeignKey('Profile', related_name='Neighbourhood', null=True)
+    biz = models.ForeignKey('Business', related_name='Business', null=True)
 
     def __str__(self):
         return self.name
@@ -54,6 +56,15 @@ class Neighbourhood(models.Model):
         :return:
         """
         self.delete()
+
+    @classmethod
+    def search_business_hood(cls, search_term):
+        """
+        method to search for business by neighbourhood
+        :return:
+        """
+        business = cls.objects.filter(biz__name__icontains=search_term)
+        return business
 
 
 class Profile(models.Model):
@@ -94,7 +105,7 @@ class Business(models.Model):
     """
     name = models.CharField(max_length=2000)
     email = models.CharField(max_length=2000)
-    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
+    user = models.ForeignKey(Profile, on_delete=models.CASCADE, null=True)
     neighbourhood = models.ForeignKey(Neighbourhood, on_delete=models.CASCADE, related_name='business', null=True)
 
     def __str__(self):
@@ -126,13 +137,25 @@ class Business(models.Model):
         biz.save()
         return biz
 
-    @classmethod
-    def search_business(cls, search_term):
-        """
-        method to search for business by neighbourhood
-        :return:
-        """
-        business = cls.objects.filter(name__neighbourhood__icontains=search_term)
-        return business
+
+class Post(models.Model):
+    """
+    class for creating posts
+    """
+    user = models.ForeignKey(Profile, on_delete=models.CASCADE, related_name='post')
+    content = models.TextField()
+    neighbourhood = models.ForeignKey(Neighbourhood, on_delete=models.CASCADE, related_name='post', null=True)
+
+    def save_post(self):
+        self.save()
 
 
+class Comment(models.Model):
+    """
+    class for creating comments on posts
+    """
+    comment = models.CharField(max_length=10000)
+    post = models.ForeignKey(Post, related_name='comment', null=True)
+
+    def save_comment(self):
+        self.save()
