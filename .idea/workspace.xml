@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="99e10c2d-09cf-4efe-8a7c-e23265d43f8f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neighbour/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/neighbour/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neighbours/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/neighbours/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neighbours/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/neighbours/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neighbours/templates/Profile/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/neighbours/templates/Profile/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neighbours/templates/Profile/profile_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/neighbours/templates/Profile/profile_edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neighbours/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/neighbours/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neighbours/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/neighbours/templates/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neighbours/templates/registration/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/neighbours/templates/registration/navbar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neighbours/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/neighbours/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,30 +41,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="865" />
+          <entry key="html" value="877" />
           <entry key="md" value="26" />
-          <entry key="py" value="3245" />
+          <entry key="py" value="3732" />
           <entry key="txt" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="865" />
+          <entry key="HTML" value="877" />
           <entry key="Markdown" value="26" />
           <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Python" value="3245" />
+          <entry key="Python" value="3732" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.128">
+    <splitter split-orientation="horizontal" split-proportion="0.102783725">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/neighbours/models.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
+                <state relative-caret-position="990">
                   <caret line="75" column="53" selection-start-line="75" selection-start-column="53" selection-end-line="75" selection-end-column="53" />
                   <folding>
                     <element signature="e#0#28#0" expanded="true" />
@@ -200,36 +193,37 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/neighbours/forms.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="424">
-                  <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+                <state relative-caret-position="173">
+                  <caret line="32" column="41" lean-forward="true" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
                   <folding>
                     <element signature="e#0#24#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/neighbours/views.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
-                  <folding>
-                    <element signature="e#1#46#0" expanded="true" />
+                    <marker date="1539956063953" expanded="true" signature="763:970" ph="..." />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/neighbours/views.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="337">
+                  <caret line="145" column="52" selection-start-line="145" selection-start-column="52" selection-end-line="145" selection-end-column="52" />
+                  <folding>
+                    <element signature="e#1#46#0" expanded="true" />
+                    <marker date="1539956327460" expanded="true" signature="4512:4517" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/neighbours/templates/Profile/profile.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="77" selection-start-line="2" selection-start-column="77" selection-end-line="2" selection-end-column="77" />
+                <state relative-caret-position="210">
+                  <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
                   <folding>
-                    <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -486,20 +480,20 @@
         <option value="$PROJECT_DIR$/neighbour/settings.py" />
         <option value="$PROJECT_DIR$/neighbours/templates/registration/navbar.html" />
         <option value="$PROJECT_DIR$/neighbours/templates/navbar.html" />
-        <option value="$PROJECT_DIR$/neighbours/views.py" />
         <option value="$PROJECT_DIR$/neighbour/urls.py" />
         <option value="$PROJECT_DIR$/neighbours/models.py" />
-        <option value="$PROJECT_DIR$/neighbours/forms.py" />
         <option value="$PROJECT_DIR$/neighbours/templates/Profile/profile_edit.html" />
         <option value="$PROJECT_DIR$/neighbours/templates/home.html" />
         <option value="$PROJECT_DIR$/neighbours/templates/Profile/profile.html" />
+        <option value="$PROJECT_DIR$/neighbours/forms.py" />
+        <option value="$PROJECT_DIR$/neighbours/views.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="208" />
-    <option name="y" value="124" />
-    <option name="width" value="1158" />
+    <option name="x" value="668" />
+    <option name="y" value="100" />
+    <option name="width" value="667" />
     <option name="height" value="708" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -576,10 +570,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="208" y="124" width="1158" height="708" extended-state="0" />
+    <frame x="668" y="100" width="667" height="708" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48793104" visible="true" weight="0.32464027" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48793104" weight="0.15917267" />
       <window_info id="Structure" order="1" sideWeight="0.512069" side_tool="true" weight="0.21348314" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.34937888" />
@@ -591,7 +585,7 @@
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32919255" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" weight="0.3275862" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4969697" weight="0.3689655" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4969697" visible="true" weight="0.27758622" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5030303" side_tool="true" weight="0.32919255" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.32919255" />
@@ -859,16 +853,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neighbours/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
-          <folding>
-            <element signature="e#1#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/neighbour/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -883,16 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/neighbours/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1020,12 +994,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/neighbours/templates/Profile/profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="77" selection-start-line="2" selection-start-column="77" selection-end-line="2" selection-end-column="77" />
+        <state relative-caret-position="210">
+          <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neighbours/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="32" column="41" lean-forward="true" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+            <marker date="1539956063953" expanded="true" signature="763:970" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neighbours/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="145" column="52" selection-start-line="145" selection-start-column="52" selection-end-line="145" selection-end-column="52" />
+          <folding>
+            <element signature="e#1#46#0" expanded="true" />
+            <marker date="1539956327460" expanded="true" signature="4512:4517" ph="..." />
           </folding>
         </state>
       </provider>

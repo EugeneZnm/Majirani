@@ -19,7 +19,7 @@ from django.contrib.auth.models import User
 from .models import Profile, Neighbourhood, Business
 
 # import forms
-from .forms import SignUpForm, EditProfileForm
+from .forms import SignUpForm, EditProfileForm, NeighbourhoodForm
 
 # Create your views here.
 
@@ -131,3 +131,22 @@ def search_biz(request):
     else:
         message ="Enter Business to Search For"
         return render(request, "search.html", {"message":message})
+
+
+def create_hood(request):
+    """
+    view function to create hood
+    :param request:
+    :return:
+    """
+    if request.method == 'POST':
+        nform = NeighbourhoodForm(request.POST, request.FILES)
+        if nform.is_valid():
+            n = nform.save(commit=False)
+            n.admin = request.user.profile
+            request.user.profile.save()
+            n.save
+            return redirect('neighbourhood')
+        else:
+            nform = NeighbourhoodForm()
+        return render(request, 'createhood.html', locals())
