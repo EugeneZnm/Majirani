@@ -14,6 +14,10 @@ url(r'^profile/', views.profile, name='profile'),
 
 url(r'^search/', views.search_biz, name='search_biz'),
 
+url(r'^newhood', views.create_hood, name='newhood'),
+
+url(r'neighbourhood', views.neighbourhood, name='neighbourhood'),
+
 ]
 
 if settings.DEBUG:
