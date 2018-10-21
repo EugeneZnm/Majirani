@@ -16,6 +16,7 @@ class Neighbourhood(models.Model):
     name = models.CharField(max_length=2000)
     location = models.CharField(max_length=2000)
     image = models.ImageField(upload_to='media/', null=True)
+    description = models.CharField(max_length=10000, null=True)
     police = models.IntegerField(null=True)
     Hospital = models.IntegerField(null=True)
     admin = models.ForeignKey('Profile', related_name='Neighbourhood', null=True)
@@ -106,6 +107,7 @@ class Business(models.Model):
     """
     name = models.CharField(max_length=2000)
     email = models.CharField(max_length=2000)
+    description = models.TextField(max_length=10000, null=True)
     user = models.ForeignKey(Profile, on_delete=models.CASCADE, null=True)
     neighbourhood = models.ForeignKey(Neighbourhood, on_delete=models.CASCADE, related_name='business', null=True)
 

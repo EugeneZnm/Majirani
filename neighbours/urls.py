@@ -14,9 +14,16 @@ url(r'^profile/', views.profile, name='profile'),
 
 url(r'^search/', views.search_biz, name='search_biz'),
 
-url(r'^newhood', views.create_hood, name='newhood'),
+url(r'^newhood/', views.create_hood, name='newhood'),
 
-url(r'neighbourhood', views.neighbourhood, name='neighbourhood'),
+url(r'^neighbourhood/(\d+)$', views.neighbourhood, name='neighbourhood'),
+
+url(r'^newbiz/', views.createbiz, name='newbiz'),
+
+# url(r'^enterhood/(?P<neighbourhood_id>\d+)$', views.enter_hood, name='enterhood'),
+#
+# url(r'^exithood/(?P<neighbourhood_id>\d+)$', views.exit_hood, name='exithood'),
+
 
 ]
 

@@ -11,6 +11,14 @@ body {
 </style>
 
 <body>
-
+    {% for hood in neighbourhood %}
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="{{hood.image.url}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{hood.name}}</h5>
+        <p class="card-text">{{hood.description}}</p>
+      </div>
+    </div>
+    {% endfor %}
 </body>
 {% endblock %}

@@ -1,5 +1,5 @@
 
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 
 # from django.core.mail import EmailMessage
 # from .tokens import account_activation_token
@@ -19,7 +19,7 @@ from django.contrib.auth.models import User
 from .models import Profile, Neighbourhood, Business
 
 # import forms
-from .forms import SignUpForm, EditProfileForm, NeighbourhoodForm
+from .forms import SignUpForm, EditProfileForm, NeighbourhoodForm, CreatebizForm
 
 # Create your views here.
 
@@ -27,7 +27,8 @@ from .forms import SignUpForm, EditProfileForm, NeighbourhoodForm
 # Home view function
 def Home(request):
 
-    return render(request, 'home.html')
+    hoods = Neighbourhood.objects.all()
+    return render(request, 'home.html', locals())
 
 
 # SIGNUP VIEW FUNCTION
@@ -133,6 +134,7 @@ def search_biz(request):
         return render(request, "search.html", {"message":message})
 
 
+@login_required(login_url='/registration/login/')
 def create_hood(request):
     """
     view function to create hood
@@ -145,18 +147,53 @@ def create_hood(request):
             n = nform.save(commit=False)
             n.admin = request.user.profile
             request.user.profile.save()
-            n.save
+            n.save()
             return redirect('neighbourhood')
     else:
         nform = NeighbourhoodForm()
     return render(request, 'createhood.html', {'nform': nform})
 
 
-@login_required(login_url='/registration/login/')
+def createbiz(request):
+    """
+    create business function
+    :param request:
+    :return:
+    """
+    if request.method == 'POST':
+        bform = CreatebizForm(request.POST, request.FILES)
+        if bform.is_valid():
+            b = bform.save(commit=False)
+            b.user = request.user.profile
+            b.neighbourhood = request.user.profile.neighbourhood
+            b.save()
+            return redirect('neighbourhood')
+    else:
+        bform = CreatebizForm()
+    return redirect(request, 'createbiz.html', locals())
+
+
 def neighbourhood(request, neighbourhood_id):
     """
     view function to render neighbourhood
 
     """
-    hoods = Neighbourhood.objects.find_neighbourhood(neighbourhood_id)
-    return render(request, 'neighbourhood.html', locals())
+    hood = Neighbourhood.find_neighbourhood(neighbourhood_id)
+    return render(request, 'neighbourhood.html', {"hood":hood, "neighbourhood_id":neighbourhood_id})
+
+
+@login_required(login_url='/registration/login/')
+def enter_hood(request, neighbourhood_id):
+    hood = get_object_or_404(Neighbourhood, pk=neighbourhood_id)
+    request.user.profile.neighbourhood = hood
+    request.user.profile.save()
+    return redirect('neighbourhood')
+
+
+@login_required(login_url='/registration/login/')
+def exit_hood(request, neighbourhood_id):
+    hood = get_object_or_404(Neighbourhood, pk=neighbourhood_id)
+    if request.user.profile.neighbourhood == hood:
+        request.user.profile.neighbourhood = None
+        request.user.profile.save()
+    return redirect('home')

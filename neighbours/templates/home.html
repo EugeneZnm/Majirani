@@ -4,9 +4,38 @@
     body{
        background-image: url("/static/33074614london-growing.jpg");
     }
+    li {
+        display: inline;
+    }
+    ul{
+        margin-top: 1em;
+    }
+    card-body{
+        opacity: 0.1;
+    }
+    img {
+        style: height: 10rem;
+    }
 </style>
 
 <body>
-
+ <div class="row">
+    {% for hood in hoods %}
+     <ul>
+         <li>
+            <div class="card" style="width: 18rem; height: 20rem;">
+              <img  style="height: 10rem;"class="card-img-top" src="{{hood.image.url}}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">{{hood.name}}</h5>
+                <p class="card-text">{{hood.description}}</p>
+              </div>
+              <div class="footer">
+                  <button class="btn btn-primary"><a href="/neighbourhood/{{neighbourhood_id}}"><strong>Explore</strong></a></button>
+              </div>
+            </div>
+         </li>
+     </ul>
+    {% endfor %}
+ </div>
 </body>
 {% endblock %}
