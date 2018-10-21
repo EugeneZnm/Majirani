@@ -107,7 +107,8 @@ class Business(models.Model):
     """
     name = models.CharField(max_length=2000)
     email = models.CharField(max_length=2000)
-    description = models.TextField(max_length=10000, null=True)
+    number = models.IntegerField(null=True)
+    description = models.CharField(max_length=15000, null=True)
     user = models.ForeignKey(Profile, on_delete=models.CASCADE, null=True)
     neighbourhood = models.ForeignKey(Neighbourhood, on_delete=models.CASCADE, related_name='business', null=True)
 

@@ -19,6 +19,7 @@ body {
                     <div class="card-body">
                       <form method="post" action="{% url 'newbiz'%}" enctype="multipart/form-data" novalidate>
                         {% csrf_token %}
+                        <strong>New Business</strong>
                         {{bform|crispy}}
                         <button type="submit" class="btn btn-success btn-block" style="margin-left: 0em;">New Neighbourhood</button>
                       </form>

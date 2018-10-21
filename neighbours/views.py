@@ -19,7 +19,7 @@ from django.contrib.auth.models import User
 from .models import Profile, Neighbourhood, Business
 
 # import forms
-from .forms import SignUpForm, EditProfileForm, NeighbourhoodForm, CreatebizForm
+from .forms import SignUpForm, EditProfileForm, NeighbourhoodForm, CreatebizForm, PostForm
 
 # Create your views here.
 
@@ -154,6 +154,27 @@ def create_hood(request):
     return render(request, 'createhood.html', {'nform': nform})
 
 
+@login_required()
+def create_post(request):
+    """
+    view function to create posts
+    :param request:
+    :return:
+    """
+    if request.method == 'POST':
+        pform = PostForm(request.POST)
+        if pform.is_valid():
+            p = pform.save(commit=False)
+            p.user = request.user.profile
+            p.neighbourhood = request.user.profile.neighbourhood
+            p.save()
+            return redirect('neighbourhood')
+    else:
+        pform = PostForm
+    return render(request, 'post.html', locals())
+
+
+@login_required()
 def createbiz(request):
     """
     create business function
@@ -170,7 +191,7 @@ def createbiz(request):
             return redirect('neighbourhood')
     else:
         bform = CreatebizForm()
-    return redirect(request, 'createbiz.html', locals())
+    return render(request, 'createbiz.html', locals())
 
 
 def neighbourhood(request, neighbourhood_id):

@@ -11,14 +11,20 @@ body {
 </style>
 
 <body>
-    {% for hood in neighbourhood %}
-    <div class="card" style="width: 18rem;">
+    {% for hood in hood %}
+    <div class="card" style="width: 300px; height: 430px; margin-left: 30em;">
       <img class="card-img-top" src="{{hood.image.url}}" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">{{hood.name}}</h5>
         <p class="card-text">{{hood.description}}</p>
       </div>
-    </div>
+      <ul class="list-group list-group-flush">
+          <li class="list-group-item"><strong>Police:   {{hood.police}}</strong></li>
+          <li class="list-group-item"><strong>Hospital: {{hood.Hospital}}</strong></li>
+          <li class="list-group-item"><strong>Admin:    {{hood.admin}}</strong></li>
+      </ul>
+   </div>
+
     {% endfor %}
 </body>
 {% endblock %}

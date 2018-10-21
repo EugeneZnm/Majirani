@@ -48,4 +48,14 @@ class CreatebizForm(forms.ModelForm):
     """
     class Meta:
         model = Business
-        fields = ['name', 'email', 'description']
+        fields = ['name', 'email', 'number', 'description']
+
+
+class PostForm(forms.ModelForm):
+    """
+    Form to Create Posts
+    """
+    class Meta:
+        model = Post
+        exclude = ['user', 'neighbourhood']
+        fields = ['content']
