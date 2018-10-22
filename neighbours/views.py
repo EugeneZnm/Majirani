@@ -148,7 +148,7 @@ def create_hood(request):
             n.admin = request.user.profile
             request.user.profile.save()
             n.save()
-            return redirect('hood')
+        return redirect('neighbourhood',request.user.profile.neighbourhood.id)
     else:
         nform = NeighbourhoodForm()
     return render(request, 'createhood.html', {'nform': nform})
@@ -168,7 +168,7 @@ def create_post(request):
             p.user = request.user.profile
             p.neighbourhood = request.user.profile.neighbourhood
             p.save()
-            return redirect('neighbourhood')
+        return redirect('neighbourhood',request.user.profile.neighbourhood.id)
     else:
         pform = PostForm
     return render(request, 'post.html', locals())
@@ -188,7 +188,7 @@ def createbiz(request):
             b.user = request.user.profile
             b.neighbourhood = request.user.profile.neighbourhood
             b.save()
-            return redirect('neighbourhood')
+        return redirect('neighbourhood', request.user.profile.neighbourhood.id)
     else:
         bform = CreatebizForm()
     return render(request, 'createbiz.html', locals())
@@ -200,9 +200,10 @@ def neighbourhood(request, neighbourhood_id):
 
     """
     hood = Neighbourhood.find_neighbourhood(neighbourhood_id)
-    bsns = Business.find_business(neighbourhood_id)
-    post = Post.objects.filter(id=neighbourhood_id)
-    return render(request, 'neighbourhood.html', {"hood":hood, "neighbourhood_id":neighbourhood_id, "bsns":bsns, "post":post})
+    bsns = Business.objects.filter(neighbourhood=request.user.profile.neighbourhood)
+    post = Post.objects.filter(neighbourhood=request.user.profile.neighbourhood)
+
+    return render(request, 'neighbourhood.html',locals())
 
 
 @login_required(login_url='/registration/login/')
@@ -210,7 +211,7 @@ def enter_hood(request, neighbourhood_id):
     hood = get_object_or_404(Neighbourhood, pk=neighbourhood_id)
     request.user.profile.neighbourhood = hood
     request.user.profile.save()
-    return redirect('neighbourhood')
+    return redirect('neighbourhood',neighbourhood_id)
 
 
 @login_required(login_url='/registration/login/')
@@ -220,3 +221,10 @@ def exit_hood(request, neighbourhood_id):
         request.user.profile.neighbourhood = None
         request.user.profile.save()
     return redirect('home')
+
+
+# def currenthood(request, neighbourhood_id):
+#     hood = Neighbourhood.find_neighbourhood(neighbourhood_id)
+#     bsns = Business.find_business(neighbourhood_id)
+#     post = Post.objects.filter(id=neighbourhood_id)
+#     return render(request,'neighbourhood.html',{"neighbourhood_id":neighbourhood_id}, locals())

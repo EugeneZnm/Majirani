@@ -22,9 +22,11 @@ url(r'^newbiz/$', views.createbiz, name='newbiz'),
 
 url(r'^post/$', views.create_post, name='post'),
 
+# url(r'^hood/$', views.currenthood, name="currenthood"),
+
 url(r'^enterhood/(?P<neighbourhood_id>\d+)$', views.enter_hood, name='enterhood'),
 #
-# url(r'^exithood/(?P<neighbourhood_id>\d+)$', views.exit_hood, name='exithood'),
+url(r'^exithood/(?P<neighbourhood_id>\d+)$', views.exit_hood, name='exithood'),
 
 
 ]

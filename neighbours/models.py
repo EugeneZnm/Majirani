@@ -77,7 +77,7 @@ class Profile(models.Model):
     bio = models.CharField(max_length=2000, null=True)
     email = models.CharField(max_length=2000)
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="profile")
-    neighbourhood = models.ForeignKey(Neighbourhood, on_delete=models.CASCADE, related_name='profile', null=True)
+    neighbourhood = models.ForeignKey(Neighbourhood, on_delete=models.CASCADE,  null=True)
 
     def __str__(self):
         return self.user.username

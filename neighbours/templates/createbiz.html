@@ -16,7 +16,7 @@ body {
                 <div class="col-lg-8 col-md-10 col-sm-12">
                   <div class="card">
                     <div class="card-body">
-                      <form method="post" action="{% url 'newbiz'%}" enctype="multipart/form-data" novalidate>
+                      <form method="post" action="/newbiz/" enctype="multipart/form-data" novalidate>
                         {% csrf_token %}
                         <strong>New Business</strong>
                         {{bform|crispy}}

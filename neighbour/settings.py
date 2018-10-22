@@ -139,7 +139,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 LOGOUT_REDIRECT_URL = 'home'
 
 # login redirect
-LOGIN_REDIRECT_URL = 'profile'
+LOGIN_REDIRECT_URL = 'neighbourhood'
 
 # defining the login url of application
 LOGIN_URL = 'login'

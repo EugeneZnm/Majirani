@@ -2,14 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99e10c2d-09cf-4efe-8a7c-e23265d43f8f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/neighbours/templates/post.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neighbour/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/neighbour/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neighbours/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/neighbours/migrations/0002_auto_20181018_1140.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/neighbours/migrations/0003_auto_20181019_0843.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/neighbours/migrations/0004_neighbourhood_image.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/neighbours/migrations/0005_auto_20181019_0854.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/neighbours/migrations/0006_profile_bio.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/neighbours/migrations/0007_auto_20181020_0705.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/neighbours/migrations/0008_neighbourhood_description.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/neighbours/migrations/0009_auto_20181021_1434.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/neighbours/migrations/0010_auto_20181021_1435.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/neighbours/migrations/0011_business_number.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/neighbours/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/neighbours/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neighbours/templates/createbiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/neighbours/templates/createbiz.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neighbours/templates/createhood.html" beforeDir="false" afterPath="$PROJECT_DIR$/neighbours/templates/createhood.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neighbours/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/neighbours/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neighbours/templates/neighbourhood.html" beforeDir="false" afterPath="$PROJECT_DIR$/neighbours/templates/neighbourhood.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neighbours/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/neighbours/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neighbours/templates/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/neighbours/templates/post.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neighbours/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/neighbours/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neighbours/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/neighbours/views.py" afterDir="false" />
     </list>
@@ -23,11 +34,12 @@
     <session id="188903839">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.99" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -36,7 +48,7 @@
           <entry key="jpeg" value="3" />
           <entry key="jpg" value="2" />
           <entry key="md" value="1" />
-          <entry key="py" value="23" />
+          <entry key="py" value="25" />
           <entry key="rnc" value="1" />
           <entry key="txt" value="3" />
         </counts>
@@ -47,46 +59,46 @@
           <entry key="Image" value="5" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="23" />
+          <entry key="Python" value="25" />
           <entry key="RNG Compact" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="3801" />
+          <entry key="html" value="4377" />
           <entry key="md" value="26" />
-          <entry key="py" value="6420" />
+          <entry key="py" value="6756" />
           <entry key="txt" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="3801" />
+          <entry key="HTML" value="4377" />
           <entry key="Markdown" value="26" />
           <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Python" value="6420" />
+          <entry key="Python" value="6756" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.45738396">
+    <splitter split-orientation="horizontal" split-proportion="0.39848486">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/neighbours/models.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
+                <state relative-caret-position="2145">
                   <caret line="149" column="30" selection-start-line="149" selection-start-column="30" selection-end-line="149" selection-end-column="30" />
                   <folding>
                     <element signature="e#0#28#0" expanded="true" />
-                    <marker date="1540152819243" expanded="true" signature="1221:1397" ph="..." />
-                    <marker date="1540152819243" expanded="true" signature="1811:1961" ph="..." />
-                    <marker date="1540152819243" expanded="true" signature="2829:2834" ph="..." />
-                    <marker date="1540152819243" expanded="true" signature="3406:3410" ph="..." />
-                    <marker date="1540152819243" expanded="true" signature="3960:3965" ph="..." />
-                    <marker date="1540152819243" expanded="true" signature="4266:4271" ph="..." />
-                    <marker date="1540152819243" expanded="true" signature="4471:4476" ph="..." />
+                    <marker date="1540195569469" expanded="true" signature="1221:1397" ph="..." />
+                    <marker date="1540195569469" expanded="true" signature="1811:1961" ph="..." />
+                    <marker date="1540195569469" expanded="true" signature="2806:2811" ph="..." />
+                    <marker date="1540195569469" expanded="true" signature="3383:3387" ph="..." />
+                    <marker date="1540195569469" expanded="true" signature="3937:3942" ph="..." />
+                    <marker date="1540195569469" expanded="true" signature="4243:4248" ph="..." />
+                    <marker date="1540195569469" expanded="true" signature="4448:4453" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -95,21 +107,22 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/neighbours/templates/home.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="253">
-                  <caret line="32" column="76" selection-start-line="32" selection-start-column="76" selection-end-line="32" selection-end-column="76" />
+                <state relative-caret-position="303">
+                  <caret line="33" column="80" selection-start-line="33" selection-start-column="80" selection-end-line="33" selection-end-column="80" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#body#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#li#0;n#ul#0;n#div#0;n#body#0;n#!!top" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/neighbours/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="254">
-                  <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+                <state relative-caret-position="263">
+                  <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
                   <folding>
                     <element signature="e#0#32#0" expanded="true" />
                   </folding>
@@ -120,13 +133,13 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/neighbours/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="298">
-                  <caret line="193" column="54" lean-forward="true" selection-start-line="193" selection-start-column="54" selection-end-line="193" selection-end-column="54" />
+                <state relative-caret-position="2445">
+                  <caret line="183" column="32" selection-start-line="183" selection-start-column="32" selection-end-line="183" selection-end-column="32" />
                   <folding>
                     <element signature="e#1#65#0" expanded="true" />
-                    <marker date="1540192057144" expanded="true" signature="5223:5727" ph="..." />
-                    <marker date="1540192057144" expanded="true" signature="6712:6713" ph="..." />
-                    <marker date="1540192057144" expanded="true" signature="7029:7260" ph="..." />
+                    <marker date="1540208186213" expanded="true" signature="5266:5804" ph="..." />
+                    <marker date="1540208186213" expanded="true" signature="6818:6819" ph="..." />
+                    <marker date="1540208186213" expanded="true" signature="7152:7383" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -135,8 +148,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/neighbours/templates/post.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="237">
-                  <caret line="19" column="58" lean-forward="true" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+                <state relative-caret-position="251">
+                  <caret line="19" column="64" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -148,8 +161,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/neighbours/templates/createhood.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="177">
-                  <caret line="19" column="64" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
+                <state relative-caret-position="285">
+                  <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -161,10 +174,12 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/neighbours/templates/neighbourhood.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="25" column="79" selection-start-line="25" selection-start-column="79" selection-end-line="25" selection-end-column="79" />
+                <state relative-caret-position="315">
+                  <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
                   <folding>
-                    <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#!!top" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -185,6 +200,15 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/neighbour/settings.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-60">
+                  <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/neighbours/templates/registration/login.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="315">
@@ -199,11 +223,6 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/neighbours/static/Map-2008-3.jpg">
-              <provider selected="true" editor-type-id="images" />
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -211,8 +230,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/neighbours/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+                <state relative-caret-position="247">
+                  <caret line="17" selection-start-line="17" selection-end-line="17" />
                   <folding>
                     <element signature="e#0#32#0" expanded="true" />
                   </folding>
@@ -220,15 +239,21 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/neighbours/templates/neighbourhood.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="178">
-                  <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+                <state relative-caret-position="324">
+                  <caret line="55" column="85" lean-forward="true" selection-start-line="55" selection-start-column="85" selection-end-line="55" selection-end-column="85" />
                   <folding>
-                    <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#button#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#1;n#body#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#1;n#body#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#!!top" expanded="true" />
                   </folding>
                 </state>
@@ -238,17 +263,16 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/neighbours/models.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-152">
-                  <caret line="126" column="35" lean-forward="true" selection-start-line="126" selection-start-column="35" selection-end-line="126" selection-end-column="35" />
+                <state relative-caret-position="-1481">
                   <folding>
                     <element signature="e#0#28#0" expanded="true" />
-                    <marker date="1540152819243" expanded="true" signature="1221:1397" ph="..." />
-                    <marker date="1540152819243" expanded="true" signature="1811:1961" ph="..." />
-                    <marker date="1540152819243" expanded="true" signature="2829:2834" ph="..." />
-                    <marker date="1540152819243" expanded="true" signature="3406:3410" ph="..." />
-                    <marker date="1540152819243" expanded="true" signature="3960:3965" ph="..." />
-                    <marker date="1540152819243" expanded="true" signature="4266:4271" ph="..." />
-                    <marker date="1540152819243" expanded="true" signature="4471:4476" ph="..." />
+                    <marker date="1540195569469" expanded="true" signature="1221:1397" ph="..." />
+                    <marker date="1540195569469" expanded="true" signature="1811:1961" ph="..." />
+                    <marker date="1540195569469" expanded="true" signature="2806:2811" ph="..." />
+                    <marker date="1540195569469" expanded="true" signature="3383:3387" ph="..." />
+                    <marker date="1540195569469" expanded="true" signature="3937:3942" ph="..." />
+                    <marker date="1540195569469" expanded="true" signature="4243:4248" ph="..." />
+                    <marker date="1540195569469" expanded="true" signature="4448:4453" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -257,11 +281,12 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/neighbours/templates/home.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="343">
-                  <caret line="32" column="80" selection-start-line="32" selection-start-column="80" selection-end-line="32" selection-end-column="80" />
+                <state relative-caret-position="197">
+                  <caret line="29" column="61" lean-forward="true" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#body#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#li#0;n#ul#0;n#div#0;n#body#0;n#!!top" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -270,8 +295,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/neighbours/templates/createbiz.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="12" column="70" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
+                <state relative-caret-position="105">
+                  <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -283,8 +308,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/neighbours/templates/createhood.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="118">
-                  <caret line="10" selection-start-line="10" selection-end-line="10" />
+                <state relative-caret-position="315">
+                  <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -297,7 +322,7 @@
             <entry file="file://$PROJECT_DIR$/neighbours/templates/Profile/profile.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="390">
-                  <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+                  <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -307,17 +332,26 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/neighbours/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret line="159" column="33" lean-forward="true" selection-start-line="159" selection-start-column="33" selection-end-line="159" selection-end-column="33" />
+                <state relative-caret-position="1103">
+                  <caret line="175" lean-forward="true" selection-start-line="175" selection-end-line="175" />
                   <folding>
                     <element signature="e#1#65#0" expanded="true" />
-                    <marker date="1540192057144" expanded="true" signature="5223:5727" ph="..." />
-                    <marker date="1540192057144" expanded="true" signature="6712:6713" ph="..." />
-                    <marker date="1540192057144" expanded="true" signature="7029:7260" ph="..." />
+                    <marker date="1540208186213" expanded="true" signature="5266:5804" ph="..." />
+                    <marker date="1540208186213" expanded="true" signature="6818:6819" ph="..." />
+                    <marker date="1540208186213" expanded="true" signature="7152:7383" ph="..." />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/neighbour/settings.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="825">
+                  <caret line="55" selection-start-line="55" selection-end-line="55" />
                 </state>
               </provider>
             </entry>
@@ -361,7 +395,6 @@
         <option value="$PROJECT_DIR$/neighbour/templates/base_site.html" />
         <option value="$PROJECT_DIR$/neighbour/templates/admin/base_site.html" />
         <option value="$PROJECT_DIR$/neighbour/templates/admin/login.html" />
-        <option value="$PROJECT_DIR$/neighbour/settings.py" />
         <option value="$PROJECT_DIR$/neighbours/templates/registration/navbar.html" />
         <option value="$PROJECT_DIR$/neighbours/templates/Profile/profile_edit.html" />
         <option value="$PROJECT_DIR$/neighbours/templates/base.html" />
@@ -372,21 +405,22 @@
         <option value="$PROJECT_DIR$/neighbours/forms.py" />
         <option value="$PROJECT_DIR$/neighbours/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/neighbours/models.py" />
-        <option value="$PROJECT_DIR$/neighbours/templates/post.html" />
-        <option value="$PROJECT_DIR$/neighbours/templates/createhood.html" />
         <option value="$PROJECT_DIR$/neighbours/urls.py" />
-        <option value="$PROJECT_DIR$/neighbours/templates/home.html" />
+        <option value="$PROJECT_DIR$/neighbour/settings.py" />
         <option value="$PROJECT_DIR$/neighbours/templates/createbiz.html" />
+        <option value="$PROJECT_DIR$/neighbours/templates/createhood.html" />
+        <option value="$PROJECT_DIR$/neighbours/templates/post.html" />
         <option value="$PROJECT_DIR$/neighbours/views.py" />
+        <option value="$PROJECT_DIR$/neighbours/templates/home.html" />
         <option value="$PROJECT_DIR$/neighbours/templates/neighbourhood.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="53" />
-    <option name="y" value="32" />
-    <option name="width" value="1298" />
-    <option name="height" value="736" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="25" />
+    <option name="y" value="87" />
+    <option name="width" value="1296" />
+    <option name="height" value="700" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -411,6 +445,12 @@
               <item name="NWATCH" type="b2602c69:ProjectViewProjectNode" />
               <item name="NWATCH" type="462c0819:PsiDirectoryNode" />
               <item name="neighbours" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NWATCH" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NWATCH" type="462c0819:PsiDirectoryNode" />
+              <item name="neighbours" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NWATCH" type="b2602c69:ProjectViewProjectNode" />
@@ -473,10 +513,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
+    <frame x="35" y="24" width="1296" height="700" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48793104" visible="true" weight="0.10227273" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48793104" weight="0.10378788" />
       <window_info id="Structure" order="1" sideWeight="0.512069" side_tool="true" weight="0.21348314" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.34937888" />
@@ -488,8 +528,8 @@
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32919255" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" weight="0.3275862" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4969697" visible="true" weight="0.24844721" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5030303" side_tool="true" weight="0.32919255" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5030303" side_tool="true" weight="0.32919255" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4969697" visible="true" weight="0.008741259" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.32919255" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -499,7 +539,7 @@
       <window_info anchor="right" id="R Packages" order="4" weight="0.32954547" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48793104" visible="true" weight="0.08863636" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48793104" visible="true" weight="0.10378788" />
       <window_info id="Structure" order="1" sideWeight="0.512069" side_tool="true" weight="0.21348314" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.34937888" />
@@ -511,7 +551,7 @@
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32919255" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" weight="0.3275862" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4969697" visible="true" weight="0.29503107" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4969697" visible="true" weight="0.5621118" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5030303" side_tool="true" weight="0.32919255" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.32919255" />
@@ -547,12 +587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -605,9 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#66#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -643,9 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -653,79 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-          <folding>
-            <element signature="e#1120#1126#0" expanded="true" />
-            <element signature="e#1126#1132#0" expanded="true" />
-            <element signature="e#1132#1138#0" expanded="true" />
-            <element signature="e#1138#1144#0" expanded="true" />
-            <element signature="e#1144#1150#0" expanded="true" />
-            <element signature="e#1150#1156#0" expanded="true" />
-            <element signature="e#1156#1162#0" expanded="true" />
-            <element signature="e#1162#1168#0" expanded="true" />
-            <element signature="e#1168#1174#0" expanded="true" />
-            <element signature="e#1174#1180#0" expanded="true" />
-            <element signature="e#1180#1186#0" expanded="true" />
-            <element signature="e#1186#1192#0" expanded="true" />
-            <element signature="e#1192#1198#0" expanded="true" />
-            <element signature="e#1198#1204#0" expanded="true" />
-            <element signature="e#1204#1210#0" expanded="true" />
-            <element signature="e#1210#1216#0" expanded="true" />
-            <element signature="e#1216#1222#0" expanded="true" />
-            <element signature="e#1222#1228#0" expanded="true" />
-            <element signature="e#1228#1234#0" expanded="true" />
-            <element signature="e#1234#1240#0" expanded="true" />
-            <element signature="e#1240#1246#0" expanded="true" />
-            <element signature="e#1246#1252#0" expanded="true" />
-            <element signature="e#1252#1258#0" expanded="true" />
-            <element signature="e#1258#1264#0" expanded="true" />
-            <element signature="e#1264#1270#0" expanded="true" />
-            <element signature="e#1270#1276#0" expanded="true" />
-            <element signature="e#1276#1282#0" expanded="true" />
-            <element signature="e#1282#1288#0" expanded="true" />
-            <element signature="e#1288#1294#0" expanded="true" />
-            <element signature="e#1294#1300#0" expanded="true" />
-            <element signature="e#1300#1306#0" expanded="true" />
-            <element signature="e#1306#1312#0" expanded="true" />
-            <element signature="e#1323#1329#0" expanded="true" />
-            <element signature="e#1329#1335#0" expanded="true" />
-            <element signature="e#1335#1341#0" expanded="true" />
-            <element signature="e#1341#1347#0" expanded="true" />
-            <element signature="e#1347#1353#0" expanded="true" />
-            <element signature="e#1353#1359#0" expanded="true" />
-            <element signature="e#1359#1365#0" expanded="true" />
-            <element signature="e#1365#1371#0" expanded="true" />
-            <element signature="e#1371#1377#0" expanded="true" />
-            <element signature="e#1377#1383#0" expanded="true" />
-            <element signature="e#1383#1389#0" expanded="true" />
-            <element signature="e#1389#1395#0" expanded="true" />
-            <element signature="e#1395#1401#0" expanded="true" />
-            <element signature="e#1401#1407#0" expanded="true" />
-            <element signature="e#1407#1413#0" expanded="true" />
-            <element signature="e#1413#1419#0" expanded="true" />
-            <element signature="e#1419#1425#0" expanded="true" />
-            <element signature="e#1425#1431#0" expanded="true" />
-            <element signature="e#1431#1437#0" expanded="true" />
-            <element signature="e#1437#1443#0" expanded="true" />
-            <element signature="e#1443#1449#0" expanded="true" />
-            <element signature="e#1449#1455#0" expanded="true" />
-            <element signature="e#1455#1461#0" expanded="true" />
-            <element signature="e#1461#1467#0" expanded="true" />
-            <element signature="e#1467#1473#0" expanded="true" />
-            <element signature="e#1473#1479#0" expanded="true" />
-            <element signature="e#1479#1485#0" expanded="true" />
-            <element signature="e#1485#1491#0" expanded="true" />
-            <element signature="e#1491#1497#0" expanded="true" />
-            <element signature="e#1497#1503#0" expanded="true" />
-            <element signature="e#1503#1509#0" expanded="true" />
-            <element signature="e#1509#1515#0" expanded="true" />
-            <element signature="e#1515#1521#0" expanded="true" />
-            <element signature="e#1521#1527#0" expanded="true" />
-            <element signature="e#1778#1784#0" expanded="true" />
-            <element signature="e#1953#1959#0" expanded="true" />
-            <element signature="e#1959#1965#0" expanded="true" />
-            <element signature="e#2329#2335#0" expanded="true" />
-            <element signature="e#2490#2496#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -757,13 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neighbour/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-131">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/neighbours/templates/registration/password_change_done.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -775,9 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
           <caret line="63" selection-start-line="63" selection-end-line="63" />
-          <folding>
-            <element signature="e#644#685#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -795,11 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="519">
           <caret line="60" column="28" lean-forward="true" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
-          <folding>
-            <marker date="1540144561896" expanded="true" signature="799:1023" ph="..." />
-            <marker date="1540144561896" expanded="true" signature="1062:1067" ph="..." />
-            <marker date="1540144561896" expanded="true" signature="1241:1246" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -829,21 +769,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neighbours/templates/post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="19" column="58" lean-forward="true" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/neighbours/templates/Profile/profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -852,10 +781,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neighbours/templates/createhood.html">
+    <entry file="file://$PROJECT_DIR$/neighbours/templates/createbiz.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="105">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -863,32 +792,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neighbours/templates/createbiz.html">
+    <entry file="file://$PROJECT_DIR$/neighbours/templates/createhood.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="70" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
+        <state relative-caret-position="315">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neighbour/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neighbours/templates/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="19" column="64" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neighbours/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1481">
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <marker date="1540195569469" expanded="true" signature="1221:1397" ph="..." />
+            <marker date="1540195569469" expanded="true" signature="1811:1961" ph="..." />
+            <marker date="1540195569469" expanded="true" signature="2806:2811" ph="..." />
+            <marker date="1540195569469" expanded="true" signature="3383:3387" ph="..." />
+            <marker date="1540195569469" expanded="true" signature="3937:3942" ph="..." />
+            <marker date="1540195569469" expanded="true" signature="4243:4248" ph="..." />
+            <marker date="1540195569469" expanded="true" signature="4448:4453" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neighbours/templates/neighbourhood.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="55" column="85" lean-forward="true" selection-start-line="55" selection-start-column="85" selection-end-line="55" selection-end-column="85" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#1;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/neighbours/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="32" column="80" selection-start-line="32" selection-start-column="80" selection-end-line="32" selection-end-column="80" />
+        <state relative-caret-position="197">
+          <caret line="29" column="61" lean-forward="true" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
           <folding>
             <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#li#0;n#ul#0;n#div#0;n#body#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/neighbours/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        <state relative-caret-position="247">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -897,43 +880,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/neighbours/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="159" column="33" lean-forward="true" selection-start-line="159" selection-start-column="33" selection-end-line="159" selection-end-column="33" />
+        <state relative-caret-position="1103">
+          <caret line="175" lean-forward="true" selection-start-line="175" selection-end-line="175" />
           <folding>
             <element signature="e#1#65#0" expanded="true" />
-            <marker date="1540192057144" expanded="true" signature="5223:5727" ph="..." />
-            <marker date="1540192057144" expanded="true" signature="6712:6713" ph="..." />
-            <marker date="1540192057144" expanded="true" signature="7029:7260" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/neighbours/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-152">
-          <caret line="126" column="35" lean-forward="true" selection-start-line="126" selection-start-column="35" selection-end-line="126" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <marker date="1540152819243" expanded="true" signature="1221:1397" ph="..." />
-            <marker date="1540152819243" expanded="true" signature="1811:1961" ph="..." />
-            <marker date="1540152819243" expanded="true" signature="2829:2834" ph="..." />
-            <marker date="1540152819243" expanded="true" signature="3406:3410" ph="..." />
-            <marker date="1540152819243" expanded="true" signature="3960:3965" ph="..." />
-            <marker date="1540152819243" expanded="true" signature="4266:4271" ph="..." />
-            <marker date="1540152819243" expanded="true" signature="4471:4476" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/neighbours/templates/neighbourhood.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#!!top" expanded="true" />
+            <marker date="1540208186213" expanded="true" signature="5266:5804" ph="..." />
+            <marker date="1540208186213" expanded="true" signature="6818:6819" ph="..." />
+            <marker date="1540208186213" expanded="true" signature="7152:7383" ph="..." />
           </folding>
         </state>
       </provider>
