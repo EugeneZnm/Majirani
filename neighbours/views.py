@@ -1,5 +1,7 @@
 
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404, HttpResponseRedirect
+
+from django.core.urlresolvers import reverse
 
 # from django.core.mail import EmailMessage
 # from .tokens import account_activation_token
@@ -16,10 +18,10 @@ from django.contrib.auth.decorators import login_required
 
 from django.contrib.auth.models import User
 
-from .models import Profile, Neighbourhood, Business, Post
+from .models import Profile, Neighbourhood, Business, Post,Comment
 
 # import forms
-from .forms import SignUpForm, EditProfileForm, NeighbourhoodForm, CreatebizForm, PostForm
+from .forms import SignUpForm, EditProfileForm, NeighbourhoodForm, CreatebizForm, PostForm, CommentForm
 
 # Create your views here.
 
@@ -122,12 +124,12 @@ def profile(request):
 
 # search for business in neighbourhood
 def search_biz(request):
-    if 'neighbourhood' in request.GET and request.GET["neighbourhood"]:
-        search_term =request.GET.get("neighbourhood")
-        searched_biz = Neighbourhood.search_business_hood(search_term)
-        message = f"{search_term}"
+    if 'business' in request.GET and request.GET["business"]:
+        search_biz =request.GET.get("business")
+        searched_biz = Business.find_business(search_biz)
+        message = f"{search_biz}"
 
-        return render(request, 'search.html',{"message":message, "Neighbourhood":searched_biz})
+        return render(request, 'search.html',{"message":message, "businesses":searched_biz})
 
     else:
         message ="Enter Business to Search For"
@@ -199,6 +201,8 @@ def neighbourhood(request, neighbourhood_id):
     view function to render neighbourhood
 
     """
+    comments = Comment.objects.all()
+    form = CommentForm()
     hood = Neighbourhood.find_neighbourhood(neighbourhood_id)
     bsns = Business.objects.filter(neighbourhood=request.user.profile.neighbourhood)
     post = Post.objects.filter(neighbourhood=request.user.profile.neighbourhood)
@@ -206,7 +210,7 @@ def neighbourhood(request, neighbourhood_id):
     return render(request, 'neighbourhood.html',locals())
 
 
-@login_required(login_url='/registration/login/')
+@login_required()
 def enter_hood(request, neighbourhood_id):
     hood = get_object_or_404(Neighbourhood, pk=neighbourhood_id)
     request.user.profile.neighbourhood = hood
@@ -214,7 +218,7 @@ def enter_hood(request, neighbourhood_id):
     return redirect('neighbourhood',neighbourhood_id)
 
 
-@login_required(login_url='/registration/login/')
+@login_required()
 def exit_hood(request, neighbourhood_id):
     hood = get_object_or_404(Neighbourhood, pk=neighbourhood_id)
     if request.user.profile.neighbourhood == hood:
@@ -223,8 +227,32 @@ def exit_hood(request, neighbourhood_id):
     return redirect('home')
 
 
+@login_required(login_url='/registration/login/')
+# def add_comment(request, post_id):
+#
+#     post = get_object_or_404(Post, pk=post_id)
+#     if request.method == 'POST':
+#         form = CommentForm(request.POST)
+#         if form.is_valid():
+#             comment = form.save(commit=False)
+#             comment.user = request.user
+#             comment.post = post
+#             comment.save()
+#         return HttpResponseRedirect(reverse('comment', args=(post.id)))
 # def currenthood(request, neighbourhood_id):
 #     hood = Neighbourhood.find_neighbourhood(neighbourhood_id)
 #     bsns = Business.find_business(neighbourhood_id)
 #     post = Post.objects.filter(id=neighbourhood_id)
 #     return render(request,'neighbourhood.html',{"neighbourhood_id":neighbourhood_id}, locals())
+
+
+def comm(request,id):
+    post = Post.objects.get(id=id)
+    if request.method == 'POST':
+        comment = CommentForm(request.POST)
+        if comment.is_valid():
+            comms = comment.save(commit=False)
+            comms.user = request.user
+            comms.post = post
+            comms.save()
+        return redirect('comment')

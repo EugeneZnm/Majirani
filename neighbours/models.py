@@ -122,13 +122,13 @@ class Business(models.Model):
         self.delete()
 
     @classmethod
-    def find_business(cls, neighbourhood_id):
+    def find_business(cls, search_biz):
         """
         method to find business by id
         :param business_id:
         :return:
         """
-        business = cls.objects.filter(id=neighbourhood_id)
+        business = cls.objects.filter(name=search_biz)
         return business
 
     @classmethod
@@ -158,8 +158,9 @@ class Comment(models.Model):
     """
     class for creating comments on posts
     """
-    comment = models.CharField(max_length=10000)
+    comment = models.CharField(max_length=10000, null=True)
     post = models.ForeignKey(Post, related_name='comment', null=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="comment", null=True)
 
     def save_comment(self):
         self.save()

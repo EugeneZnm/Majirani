@@ -69,6 +69,17 @@ body {
             <ul class="list-group list-group-flush">
               <li class="list-group-item"><strong>{{post.content}}</strong></li>
             </ul>
+             {% for comment in post.comment.all %}
+                <li style="list-style: none;">
+                    {{comment.user.username}}
+                    {{comment.comment}}
+                </li>
+             {% endfor%}
+                <form action="/comment/{{post.id}}" enctype="multipart/form-data" method="post">
+                    {% csrf_token %}
+                    {% bootstrap_form form %}
+                    <input type="submit" class="btn btn-success btn-lg" value="comment">
+                </form>
         </div>
         {% endfor %}
     </div>
