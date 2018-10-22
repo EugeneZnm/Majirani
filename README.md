@@ -7,12 +7,13 @@
 
 ## User Requirements
 
-+ [x] View posted projects and their details.
-+ [x] Post a project to be rated/reviewed.
-+ [x] View my profile page.
-+ [x] Rate/ review other users' projects
-+ [x] Search for projects .
-+ [x] View projects overall score.
++ [x] Sign in with the application to start using.
++ [x] Set up a profile about me and a general location and my neighborhood name.
++ [x] Find a list of different businesses in my neighborhood.
++ [x] Find Contact Information for the health department and Police authorities near my neighborhood.
++ [x] Create Posts that will be visible to everyone in my neighborhood.
++ [x] Change My neighborhood when I decide to move out.
++ [x] Only view details of a single neighborhood.
 
 ## Admin Dashboard
 
