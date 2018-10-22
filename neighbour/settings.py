@@ -70,7 +70,7 @@ INSTALLED_APPS = [
     'bootstrap4',
     'crispy_forms',
     'widget_tweaks',
-    'bootstrap_admin', # always before django.contrib.admin
+     # always before django.contrib.admin
     'django.contrib.admin',
 ]
 
