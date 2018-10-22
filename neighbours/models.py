@@ -122,13 +122,13 @@ class Business(models.Model):
         self.delete()
 
     @classmethod
-    def find_business(cls, business_id):
+    def find_business(cls, neighbourhood_id):
         """
         method to find business by id
         :param business_id:
         :return:
         """
-        business = cls.objects.filter(id=business_id)
+        business = cls.objects.filter(id=neighbourhood_id)
         return business
 
     @classmethod

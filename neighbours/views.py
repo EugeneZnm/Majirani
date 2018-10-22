@@ -16,7 +16,7 @@ from django.contrib.auth.decorators import login_required
 
 from django.contrib.auth.models import User
 
-from .models import Profile, Neighbourhood, Business
+from .models import Profile, Neighbourhood, Business, Post
 
 # import forms
 from .forms import SignUpForm, EditProfileForm, NeighbourhoodForm, CreatebizForm, PostForm
@@ -148,7 +148,7 @@ def create_hood(request):
             n.admin = request.user.profile
             request.user.profile.save()
             n.save()
-            return redirect('neighbourhood')
+            return redirect('hood')
     else:
         nform = NeighbourhoodForm()
     return render(request, 'createhood.html', {'nform': nform})
@@ -200,7 +200,9 @@ def neighbourhood(request, neighbourhood_id):
 
     """
     hood = Neighbourhood.find_neighbourhood(neighbourhood_id)
-    return render(request, 'neighbourhood.html', {"hood":hood, "neighbourhood_id":neighbourhood_id})
+    bsns = Business.find_business(neighbourhood_id)
+    post = Post.objects.filter(id=neighbourhood_id)
+    return render(request, 'neighbourhood.html', {"hood":hood, "neighbourhood_id":neighbourhood_id, "bsns":bsns, "post":post})
 
 
 @login_required(login_url='/registration/login/')

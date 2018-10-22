@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block content %}
-  <div class="container jumbotron">
+  <div class="container jumbotron" style="background-image: url(/static/images.jpeg) ! important">
     <h1 class="text-center logo my-4">
 
     </h1>
@@ -19,7 +19,7 @@
           <h3 class="card-header" style="text-align: center;">JIRANI</h3>
           <div class="card-body">
             <h4 class="card-title" style="text-align: center;">LOG IN</h4>
-            <form method="post" novalidate>
+            <form method="post" novalidate >
               {% csrf_token %}
               {% include 'Includes/form.html' %}
               <button type="submit" class="btn btn-success btn-block">Log in</button>

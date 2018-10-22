@@ -30,7 +30,8 @@
                 <p class="card-text">{{hood.description}}</p>
               </div>
               <div class="footer">
-                  <button class="btn btn-primary"><a href="/neighbourhood/{{neighbourhood_id}}"><strong>Explore</strong></a></button>
+                  <button class="btn btn-primary"><a href="/neighbourhood/{{hood.id}}"><strong>Explore</strong></a></button>
+                  <button class="btn btn-outline-primary joinbtn navigation" route="{% url 'join' neighbourhood_id=hood.id %}" >Join Group</button>
               </div>
             </div>
          </li>

@@ -4,23 +4,23 @@
 {% block content %}
 <style>
 body {
-         background-image: url("/static/f77d0cbac3798f58e76fd415d07b354a_elcuidadthinglinkclipartplacesintown_902666.crop_888x666_7,0.preview.jpeg");
+         background-image: url("/static/my-neighbourhood-2-638.jpg");
         }
 
 </style>
 
 <body>
      <div class="container" style="width: 500px;margin-top: 1.5em; " >
+
             <!-- edit profile Form-->
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-10 col-sm-12">
                   <div class="card">
                     <div class="card-body">
-                      <form method="post" action="{% url 'newbiz'%}" enctype="multipart/form-data" novalidate>
+                      <form method="post" action="{% url 'post'%}" enctype="multipart/form-data" novalidate>
                         {% csrf_token %}
-                        <strong>New Business</strong>
-                        {{bform|crispy}}
-                        <button type="submit" class="btn btn-success btn-block" style="margin-left: 0em;">New Business</button>
+                        {{pform|crispy}}
+                        <button type="submit" class="btn btn-success btn-block" style="margin-left: 0em;">Publish</button>
                       </form>
                     </div>
                   </div>

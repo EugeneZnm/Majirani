@@ -11,8 +11,10 @@ body {
 </style>
 
 <body>
+<div class="row">
+  <div class="col-md-9">
     {% for hood in hood %}
-    <div class="card" style="width: 300px; height: 430px; margin-left: 30em;">
+    <div class="card" style="width: 300px; height: 430px; margin-left: 33em;">
       <img class="card-img-top" src="{{hood.image.url}}" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">{{hood.name}}</h5>
@@ -24,7 +26,37 @@ body {
           <li class="list-group-item"><strong>Admin:    {{hood.admin}}</strong></li>
       </ul>
    </div>
-
     {% endfor %}
+  </div>
+    <div class="col-md-3">
+        <a href="{% url 'post' %}"><button class="btn btn-success">New Post</button></a><br><br>
+        <a href="{% url 'newbiz' %}"><button class="btn btn-success">New Business</button></a>
+    </div>
+</div>
+<div class="container row" style="margin-left: 13em; margin-top: 2em;">
+    <div class="col-md-6">
+        {% for biz in bsns %}
+        <div class="card mb-2" style="width:300px;">
+            <div class="card-header">{{biz.name}}</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><strong>{{biz.email}}</strong></li>
+              <li class="list-group-item"><strong>{{biz.number}}</strong></li>
+              <li class="list-group-item"><strong>{{biz.user}}</strong></li>
+            </ul>
+        </div>
+
+        {% endfor %}
+    </div>
+    <div class="col-md-6">
+        {% for post in post %}
+        <div class="card mb-2" style="width:300px;">
+            <div class="card-header">{{post.user}}</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><strong>{{post.content}}</strong></li>
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+</div>
 </body>
 {% endblock %}
