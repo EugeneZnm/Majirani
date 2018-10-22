@@ -26,7 +26,7 @@ This project was created on a debian linux platform but should work on other uni
 
 ### Cloning the repository
 ```bash
-git clone https://github.com/EugeneZnm/Majirani.git && cd LEVELS
+git clone https://github.com/EugeneZnm/Majirani.git && cd Majirani
 ```
 
 ### Creating a virtual environment
