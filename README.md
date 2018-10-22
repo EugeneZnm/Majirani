@@ -7,12 +7,12 @@
 
 ## User Requirements
 
-[x] View posted projects and their details.
-[x] Post a project to be rated/reviewed.
-[x] View my profile page.
-[x] Rate/ review other users' projects
-[x] Search for projects .
-[x] View projects overall score.
+-[x] View posted projects and their details.
+-[x] Post a project to be rated/reviewed.
+-[x] View my profile page.
+-[x] Rate/ review other users' projects
+-[x] Search for projects .
+-[x] View projects overall score.
 
 ## Admin Dashboard
 
