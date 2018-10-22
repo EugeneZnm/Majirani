@@ -91,6 +91,8 @@ The web app can be accessed from the following link:
 * [Python3.6](https://www.python.org/)
 * [Django 1.11](https://docs.djangoproject.com/en/1.11/)
 * [Heroku](https://heroku.com)
+* [PostrgeSql]
+* [Bootstrap 4]
 
 
 ## License
