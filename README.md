@@ -70,7 +70,7 @@ python manage.py runserver
 ```
 ## Contributing
 
-- Git clone [https://github.com/EugeneZnm/LEVELS.git](https://github.com/EugeneZnm/Majirani.git) 
+- Git clone [https://github.com/EugeneZnm/Majirani.git](https://github.com/EugeneZnm/Majirani.git) 
 - Make the changes.
 - Write your tests.
 - If everything is OK. push your changes and make a pull request.
@@ -82,7 +82,7 @@ Set the configuration to production mode
 ## Live Demo
 
 The web app can be accessed from the following link: 
-[LEVELS](https://majirani.herokuapp.com/)
+[Majirani](https://majirani.herokuapp.com/)
 
 
 ## Technology used
