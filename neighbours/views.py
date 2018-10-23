@@ -110,6 +110,27 @@ def profile_edit(request):
     return render(request, 'Profile/profile_edit.html', {'form': form})
 
 
+@login_required()
+def updatebiz(request, id):
+    """
+    create business function
+    :param request:
+    :return:
+    """
+    bsns = Business.objects.get(id=id)
+    if request.method == 'POST':
+        bform = CreatebizForm(request.POST, request.FILES, instance=bsns)
+        if bform.is_valid():
+            b = bform.save(commit=False)
+            b.user = request.user.profile
+            b.neighbourhood = request.user.profile.neighbourhood
+            b.save()
+        return redirect('neighbourhood', request.user.profile.neighbourhood.id)
+    else:
+        bform = CreatebizForm()
+    return render(request, 'createbiz.html', locals())
+
+
 # profile view function
 @login_required(login_url='/registration/login/')
 def profile(request):
@@ -119,7 +140,9 @@ def profile(request):
     """
     current_user = request.user
     profile = Profile.objects.get(user = current_user)
-    return render(request, 'Profile/profile.html', {'profile': profile})
+    bsns = Business.objects.filter(user=current_user)
+    post = Post.objects.filter(user= current_user)
+    return render(request, 'Profile/profile.html', {'profile': profile, "bsns":bsns, "post":post})
 
 
 # search for business in neighbourhood

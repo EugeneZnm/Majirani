@@ -56,6 +56,7 @@ body {
               <li class="list-group-item"><strong>Phone: {{biz.number}}</strong></li>
               <li class="list-group-item"><strong>Owner: {{biz.user}}</strong></li>
             </ul>
+            <a  href="{% url 'newbiz' %}"><button style="width: 130px;" class="btn btn-success">New Business</button></a>
         </div>
         {% endfor %}
     </div>
