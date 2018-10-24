@@ -173,7 +173,7 @@ def create_hood(request):
             n.admin = request.user.profile
             request.user.profile.save()
             n.save()
-        return redirect('neighbourhood',request.user.profile.neighbourhood.id)
+        return redirect('home')
     else:
         nform = NeighbourhoodForm()
     return render(request, 'createhood.html', {'nform': nform})

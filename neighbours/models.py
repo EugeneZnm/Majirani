@@ -109,7 +109,7 @@ class Business(models.Model):
     email = models.CharField(max_length=2000)
     number = models.IntegerField(null=True)
     description = models.CharField(max_length=15000, null=True)
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='business', null=True)
+    user = models.ForeignKey(Profile, on_delete=models.CASCADE, related_name='business', null=True)
     neighbourhood = models.ForeignKey(Neighbourhood, on_delete=models.CASCADE, related_name='business', null=True)
 
     def __str__(self):
@@ -146,7 +146,7 @@ class Post(models.Model):
     """
     class for creating posts
     """
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='post')
+    user = models.ForeignKey(Profile, on_delete=models.CASCADE, related_name='post')
     content = models.TextField()
     neighbourhood = models.ForeignKey(Neighbourhood, on_delete=models.CASCADE, related_name='post', null=True)
 
